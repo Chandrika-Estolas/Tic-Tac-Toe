@@ -29,160 +29,195 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicTacToe));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.tic_1 = new System.Windows.Forms.Button();
+            this.tic_5 = new System.Windows.Forms.Button();
+            this.tic_3 = new System.Windows.Forms.Button();
+            this.tic_2 = new System.Windows.Forms.Button();
+            this.tic_4 = new System.Windows.Forms.Button();
+            this.tic_6 = new System.Windows.Forms.Button();
+            this.tic_9 = new System.Windows.Forms.Button();
+            this.tic_8 = new System.Windows.Forms.Button();
+            this.tic_7 = new System.Windows.Forms.Button();
+            this.Restart_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // tic_1
             // 
-            this.button1.BackColor = System.Drawing.Color.Plum;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 10;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Purple;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 88);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.tic_1.BackColor = System.Drawing.Color.Black;
+            this.tic_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_1.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_1.FlatAppearance.BorderSize = 5;
+            this.tic_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_1.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_1.ForeColor = System.Drawing.Color.Blue;
+            this.tic_1.Location = new System.Drawing.Point(12, 12);
+            this.tic_1.Name = "tic_1";
+            this.tic_1.Size = new System.Drawing.Size(90, 88);
+            this.tic_1.TabIndex = 0;
+            this.tic_1.Text = "X";
+            this.tic_1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_1.UseVisualStyleBackColor = false;
+            this.tic_1.Click += new System.EventHandler(this.XandO);
             // 
-            // button2
+            // tic_5
             // 
-            this.button2.BackColor = System.Drawing.Color.Plum;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.BorderSize = 10;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Purple;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(108, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 88);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = false;
+            this.tic_5.BackColor = System.Drawing.Color.Black;
+            this.tic_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_5.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_5.FlatAppearance.BorderSize = 5;
+            this.tic_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_5.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_5.ForeColor = System.Drawing.Color.Blue;
+            this.tic_5.Location = new System.Drawing.Point(108, 106);
+            this.tic_5.Name = "tic_5";
+            this.tic_5.Size = new System.Drawing.Size(90, 88);
+            this.tic_5.TabIndex = 1;
+            this.tic_5.Text = "X";
+            this.tic_5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_5.UseVisualStyleBackColor = false;
+            this.tic_5.Click += new System.EventHandler(this.XandO);
             // 
-            // button3
+            // tic_3
             // 
-            this.button3.BackColor = System.Drawing.Color.Plum;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.BorderSize = 10;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Purple;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(204, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 88);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.tic_3.BackColor = System.Drawing.Color.Black;
+            this.tic_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_3.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_3.FlatAppearance.BorderSize = 5;
+            this.tic_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_3.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_3.ForeColor = System.Drawing.Color.Blue;
+            this.tic_3.Location = new System.Drawing.Point(204, 12);
+            this.tic_3.Name = "tic_3";
+            this.tic_3.Size = new System.Drawing.Size(90, 88);
+            this.tic_3.TabIndex = 2;
+            this.tic_3.Text = "X";
+            this.tic_3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_3.UseVisualStyleBackColor = false;
+            this.tic_3.Click += new System.EventHandler(this.XandO);
             // 
-            // button4
+            // tic_2
             // 
-            this.button4.BackColor = System.Drawing.Color.Plum;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.BorderSize = 10;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Purple;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(108, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 88);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.tic_2.BackColor = System.Drawing.Color.Black;
+            this.tic_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_2.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_2.FlatAppearance.BorderSize = 5;
+            this.tic_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_2.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_2.ForeColor = System.Drawing.Color.Blue;
+            this.tic_2.Location = new System.Drawing.Point(108, 12);
+            this.tic_2.Name = "tic_2";
+            this.tic_2.Size = new System.Drawing.Size(90, 88);
+            this.tic_2.TabIndex = 3;
+            this.tic_2.Text = "X";
+            this.tic_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_2.UseVisualStyleBackColor = false;
+            this.tic_2.Click += new System.EventHandler(this.XandO);
             // 
-            // button5
+            // tic_4
             // 
-            this.button5.BackColor = System.Drawing.Color.Plum;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button5.FlatAppearance.BorderSize = 10;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Purple;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(12, 106);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(90, 88);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.tic_4.BackColor = System.Drawing.Color.Black;
+            this.tic_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_4.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_4.FlatAppearance.BorderSize = 5;
+            this.tic_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_4.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_4.ForeColor = System.Drawing.Color.Blue;
+            this.tic_4.Location = new System.Drawing.Point(12, 106);
+            this.tic_4.Name = "tic_4";
+            this.tic_4.Size = new System.Drawing.Size(90, 88);
+            this.tic_4.TabIndex = 4;
+            this.tic_4.Text = "X";
+            this.tic_4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_4.UseVisualStyleBackColor = false;
+            this.tic_4.Click += new System.EventHandler(this.XandO);
             // 
-            // button6
+            // tic_6
             // 
-            this.button6.BackColor = System.Drawing.Color.Plum;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button6.FlatAppearance.BorderSize = 10;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.Purple;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(204, 106);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(90, 88);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = false;
+            this.tic_6.BackColor = System.Drawing.Color.Black;
+            this.tic_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_6.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_6.FlatAppearance.BorderSize = 5;
+            this.tic_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_6.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_6.ForeColor = System.Drawing.Color.Blue;
+            this.tic_6.Location = new System.Drawing.Point(204, 106);
+            this.tic_6.Name = "tic_6";
+            this.tic_6.Size = new System.Drawing.Size(90, 88);
+            this.tic_6.TabIndex = 5;
+            this.tic_6.Text = "X";
+            this.tic_6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_6.UseVisualStyleBackColor = false;
+            this.tic_6.Click += new System.EventHandler(this.XandO);
             // 
-            // button7
+            // tic_9
             // 
-            this.button7.BackColor = System.Drawing.Color.Plum;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button7.FlatAppearance.BorderSize = 10;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.Purple;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(204, 200);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(90, 88);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = false;
+            this.tic_9.BackColor = System.Drawing.Color.Black;
+            this.tic_9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_9.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_9.FlatAppearance.BorderSize = 5;
+            this.tic_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_9.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_9.ForeColor = System.Drawing.Color.Blue;
+            this.tic_9.Location = new System.Drawing.Point(204, 200);
+            this.tic_9.Name = "tic_9";
+            this.tic_9.Size = new System.Drawing.Size(90, 88);
+            this.tic_9.TabIndex = 6;
+            this.tic_9.Text = "X";
+            this.tic_9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_9.UseVisualStyleBackColor = false;
+            this.tic_9.Click += new System.EventHandler(this.XandO);
             // 
-            // button8
+            // tic_8
             // 
-            this.button8.BackColor = System.Drawing.Color.Plum;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button8.FlatAppearance.BorderSize = 10;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.Purple;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(108, 200);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(90, 88);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = false;
+            this.tic_8.BackColor = System.Drawing.Color.Black;
+            this.tic_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_8.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_8.FlatAppearance.BorderSize = 5;
+            this.tic_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_8.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_8.ForeColor = System.Drawing.Color.Blue;
+            this.tic_8.Location = new System.Drawing.Point(108, 200);
+            this.tic_8.Name = "tic_8";
+            this.tic_8.Size = new System.Drawing.Size(90, 88);
+            this.tic_8.TabIndex = 7;
+            this.tic_8.Text = "X";
+            this.tic_8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_8.UseVisualStyleBackColor = false;
+            this.tic_8.Click += new System.EventHandler(this.XandO);
             // 
-            // button9
+            // tic_7
             // 
-            this.button9.BackColor = System.Drawing.Color.Plum;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button9.FlatAppearance.BorderSize = 10;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.Purple;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(12, 200);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(90, 88);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = false;
+            this.tic_7.BackColor = System.Drawing.Color.Black;
+            this.tic_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tic_7.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.tic_7.FlatAppearance.BorderSize = 5;
+            this.tic_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tic_7.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tic_7.ForeColor = System.Drawing.Color.Blue;
+            this.tic_7.Location = new System.Drawing.Point(12, 200);
+            this.tic_7.Name = "tic_7";
+            this.tic_7.Size = new System.Drawing.Size(90, 88);
+            this.tic_7.TabIndex = 8;
+            this.tic_7.Text = "X";
+            this.tic_7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tic_7.UseVisualStyleBackColor = false;
+            this.tic_7.Click += new System.EventHandler(this.XandO);
+            // 
+            // Restart_btn
+            // 
+            this.Restart_btn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Restart_btn.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Restart_btn.FlatAppearance.BorderSize = 5;
+            this.Restart_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Restart_btn.Font = new System.Drawing.Font("ROG Fonts", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Restart_btn.ForeColor = System.Drawing.Color.Fuchsia;
+            this.Restart_btn.Location = new System.Drawing.Point(92, 305);
+            this.Restart_btn.Name = "Restart_btn";
+            this.Restart_btn.Size = new System.Drawing.Size(121, 40);
+            this.Restart_btn.TabIndex = 9;
+            this.Restart_btn.Text = "RESTART";
+            this.Restart_btn.UseVisualStyleBackColor = false;
+            this.Restart_btn.Click += new System.EventHandler(this.Restart_click);
             // 
             // TicTacToe
             // 
@@ -191,15 +226,16 @@
             this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.tictactoe2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(310, 357);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Restart_btn);
+            this.Controls.Add(this.tic_7);
+            this.Controls.Add(this.tic_8);
+            this.Controls.Add(this.tic_9);
+            this.Controls.Add(this.tic_6);
+            this.Controls.Add(this.tic_4);
+            this.Controls.Add(this.tic_2);
+            this.Controls.Add(this.tic_3);
+            this.Controls.Add(this.tic_5);
+            this.Controls.Add(this.tic_1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -212,15 +248,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button tic_1;
+        private System.Windows.Forms.Button tic_5;
+        private System.Windows.Forms.Button tic_3;
+        private System.Windows.Forms.Button tic_2;
+        private System.Windows.Forms.Button tic_4;
+        private System.Windows.Forms.Button tic_6;
+        private System.Windows.Forms.Button tic_9;
+        private System.Windows.Forms.Button tic_8;
+        private System.Windows.Forms.Button tic_7;
+        private System.Windows.Forms.Button Restart_btn;
     }
 }
 

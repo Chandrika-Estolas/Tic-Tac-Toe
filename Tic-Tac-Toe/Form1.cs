@@ -16,5 +16,15 @@ namespace Tic_Tac_Toe
         {
             InitializeComponent();
         }
+
+        private void XandO(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Restart_click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
