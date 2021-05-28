@@ -54,7 +54,6 @@
             this.tic_1.Name = "tic_1";
             this.tic_1.Size = new System.Drawing.Size(90, 88);
             this.tic_1.TabIndex = 0;
-            this.tic_1.Text = "X";
             this.tic_1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_1.UseVisualStyleBackColor = false;
             this.tic_1.Click += new System.EventHandler(this.XandO);
@@ -72,7 +71,6 @@
             this.tic_5.Name = "tic_5";
             this.tic_5.Size = new System.Drawing.Size(90, 88);
             this.tic_5.TabIndex = 1;
-            this.tic_5.Text = "X";
             this.tic_5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_5.UseVisualStyleBackColor = false;
             this.tic_5.Click += new System.EventHandler(this.XandO);
@@ -90,7 +88,6 @@
             this.tic_3.Name = "tic_3";
             this.tic_3.Size = new System.Drawing.Size(90, 88);
             this.tic_3.TabIndex = 2;
-            this.tic_3.Text = "X";
             this.tic_3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_3.UseVisualStyleBackColor = false;
             this.tic_3.Click += new System.EventHandler(this.XandO);
@@ -108,7 +105,6 @@
             this.tic_2.Name = "tic_2";
             this.tic_2.Size = new System.Drawing.Size(90, 88);
             this.tic_2.TabIndex = 3;
-            this.tic_2.Text = "X";
             this.tic_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_2.UseVisualStyleBackColor = false;
             this.tic_2.Click += new System.EventHandler(this.XandO);
@@ -126,7 +122,6 @@
             this.tic_4.Name = "tic_4";
             this.tic_4.Size = new System.Drawing.Size(90, 88);
             this.tic_4.TabIndex = 4;
-            this.tic_4.Text = "X";
             this.tic_4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_4.UseVisualStyleBackColor = false;
             this.tic_4.Click += new System.EventHandler(this.XandO);
@@ -144,7 +139,6 @@
             this.tic_6.Name = "tic_6";
             this.tic_6.Size = new System.Drawing.Size(90, 88);
             this.tic_6.TabIndex = 5;
-            this.tic_6.Text = "X";
             this.tic_6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_6.UseVisualStyleBackColor = false;
             this.tic_6.Click += new System.EventHandler(this.XandO);
@@ -162,7 +156,6 @@
             this.tic_9.Name = "tic_9";
             this.tic_9.Size = new System.Drawing.Size(90, 88);
             this.tic_9.TabIndex = 6;
-            this.tic_9.Text = "X";
             this.tic_9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_9.UseVisualStyleBackColor = false;
             this.tic_9.Click += new System.EventHandler(this.XandO);
@@ -180,7 +173,6 @@
             this.tic_8.Name = "tic_8";
             this.tic_8.Size = new System.Drawing.Size(90, 88);
             this.tic_8.TabIndex = 7;
-            this.tic_8.Text = "X";
             this.tic_8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_8.UseVisualStyleBackColor = false;
             this.tic_8.Click += new System.EventHandler(this.XandO);
@@ -198,7 +190,6 @@
             this.tic_7.Name = "tic_7";
             this.tic_7.Size = new System.Drawing.Size(90, 88);
             this.tic_7.TabIndex = 8;
-            this.tic_7.Text = "X";
             this.tic_7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tic_7.UseVisualStyleBackColor = false;
             this.tic_7.Click += new System.EventHandler(this.XandO);
@@ -241,6 +232,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TicTacToe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic-Tac-Toe";
             this.ResumeLayout(false);
 

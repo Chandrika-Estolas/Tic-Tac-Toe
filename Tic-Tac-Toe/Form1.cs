@@ -12,6 +12,9 @@ namespace Tic_Tac_Toe
 {
     public partial class TicTacToe : Form
     {
+        bool XO = true;
+        sbyte turns = 0;
+
         public TicTacToe()
         {
             InitializeComponent();
@@ -19,12 +22,20 @@ namespace Tic_Tac_Toe
 
         private void XandO(object sender, EventArgs e)
         {
+            Button XandObtn = (Button)sender;
+            if (XO)
+                XandObtn.Text = "X";
+            else
+                XandObtn.Text = "O";
+
+            XO = !XO;
 
         }
 
+
         private void Restart_click(object sender, EventArgs e)
         {
-
+            Application.Restart();
         }
     }
 }
