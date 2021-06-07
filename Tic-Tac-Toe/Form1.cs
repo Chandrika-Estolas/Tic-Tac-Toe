@@ -16,6 +16,8 @@ namespace Tic_Tac_Toe
        
         int turns = 0;
 
+        bool Is_there_a_winner = false;
+
         public TicTacToe()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace Tic_Tac_Toe
             Application.Restart();
         }
 
-        private void XandO(object sender, EventArgs e)
+        public void XandO(object sender, EventArgs e)
         {
             
                 Button XandObtn = (Button)sender;
@@ -42,40 +44,60 @@ namespace Tic_Tac_Toe
                 turns++;
 
                 WinnerDecide();
+                draw();
             }
         }
+
 
         private void WinnerDecide()
 
+            
         {
-
+            
 
             if ((tic_1.Text == tic_2.Text) && (tic_2.Text == tic_3.Text) && (tic_1.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_1.Text );
+                Is_there_a_winner = true;
             if ((tic_4.Text == tic_5.Text) && (tic_5.Text == tic_6.Text) && (tic_4.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_4.Text);
+                Is_there_a_winner = true;
             if ((tic_7.Text == tic_8.Text) && (tic_8.Text == tic_9.Text) && (tic_7.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_7.Text);
+                Is_there_a_winner = true;
 
             if ((tic_1.Text == tic_4.Text) && (tic_4.Text == tic_7.Text) && (tic_1.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_1.Text);
+                Is_there_a_winner = true;
             if ((tic_2.Text == tic_5.Text) && (tic_5.Text == tic_8.Text) && (tic_5.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_5.Text);
+                Is_there_a_winner = true;
             if ((tic_3.Text == tic_6.Text) && (tic_6.Text == tic_9.Text) && (tic_3.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_3.Text);
+                Is_there_a_winner = true;
 
             if ((tic_1.Text == tic_5.Text) && (tic_5.Text == tic_9.Text) && (tic_1.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_1.Text);
+                Is_there_a_winner = true;
             if ((tic_3.Text == tic_5.Text) && (tic_5.Text == tic_7.Text) && (tic_3.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_3.Text);
+                Is_there_a_winner = true;
 
-            else
+            if (Is_there_a_winner)
             {
-                if (turns == 9)
-                    MessageBox.Show("Draw! " + "Wanna play again?");
-            }
+                String winner = "";
+                if (XO)
+                    winner = "O";
+                else
+                    winner = "X";
 
+                MessageBox.Show("The winner is player " + winner +
+                    "                                                                                     Please click restart to play again", "YAY" );
+
+
+                
+            }
         }
+
+
+        private void draw()
+            {
+            if ((turns == 9) && (Is_there_a_winner = false))
+                MessageBox.Show("Draw! " + "Wanna play again?", "Aww");
+            }
+        }
+
     }
-}
+
 
