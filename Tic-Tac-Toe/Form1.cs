@@ -48,27 +48,37 @@ namespace Tic_Tac_Toe
         private void WinnerDecide()
 
         {
+            bool winner = false;
 
+            if ((tic_1.Text == tic_2.Text) && (tic_2 == tic_3)&& !tic_1.Enabled)
+                winner = true;
+            if ((tic_4.Text == tic_5.Text) && (tic_5 == tic_6) && !tic_4.Enabled)
+                winner = true;
+            if ((tic_7.Text == tic_8.Text) && (tic_8 == tic_9) && !tic_7.Enabled)
+                winner = true;
+            if ((tic_1.Text == tic_4.Text) && (tic_4 == tic_7) && !tic_1.Enabled)
+                winner = true;
+            if ((tic_2.Text == tic_5.Text) && (tic_5 == tic_8) && !tic_2.Enabled)
+                winner = true;
+            if ((tic_3.Text == tic_6.Text) && (tic_6 == tic_9) && !tic_3.Enabled)
+                winner = true;
+            if ((tic_1.Text == tic_5.Text) && (tic_5 == tic_9) && !tic_1.Enabled)
+                winner = true;
+            if ((tic_3.Text == tic_5.Text) && (tic_5 == tic_7) && !tic_3.Enabled)
+                winner = true;
 
-            if ((tic_1.Text == tic_2.Text) && (tic_2.Text == tic_3.Text) && (tic_1.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_1.Text );
-            if ((tic_4.Text == tic_5.Text) && (tic_5.Text == tic_6.Text) && (tic_4.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_4.Text);
-            if ((tic_7.Text == tic_8.Text) && (tic_8.Text == tic_9.Text) && (tic_7.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_7.Text);
+            if (winner)
+            {
+                string winner_is = "";
 
-            if ((tic_1.Text == tic_4.Text) && (tic_4.Text == tic_7.Text) && (tic_1.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_1.Text);
-            if ((tic_2.Text == tic_5.Text) && (tic_5.Text == tic_8.Text) && (tic_5.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_5.Text);
-            if ((tic_3.Text == tic_6.Text) && (tic_6.Text == tic_9.Text) && (tic_3.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_3.Text);
+                if (XO)
+                    winner_is = "O";
+                else
+                    winner_is = "X";
 
-            if ((tic_1.Text == tic_5.Text) && (tic_5.Text == tic_9.Text) && (tic_1.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_1.Text);
-            if ((tic_3.Text == tic_5.Text) && (tic_5.Text == tic_7.Text) && (tic_3.Text != ""))
-                MessageBox.Show("The Winner is player " + tic_3.Text);
+                MessageBox.Show("The winner is player " + winner_is);
 
+            }
             else
             {
                 if (turns == 9)
